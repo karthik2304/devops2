@@ -1,0 +1,7 @@
+minikube start
+kubectl create -f postgres-deploy.yaml
+kubectl get pods
+run-- kubectl run postgres-73 --image=postgres  -->new pods
+kubectl get pods -o wide
+kubectl exec -it postgres1-6959f7996-p69gr -- bash
+psql -h [cluster-ip] -U username --password -p 5432 databasname ->-> psql -h 10.6.35.83 -U postgresadmin --password -p 31768 postgresdb
